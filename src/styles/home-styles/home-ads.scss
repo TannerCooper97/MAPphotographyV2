@@ -1,0 +1,239 @@
+@use "../custom" as *;
+    // EXTRAS
+    .about-container-set1 {
+        width: 100%;
+        height: 75vh;
+        padding: 5rem;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: $dark-bg;
+        .boquet-image {
+          width: 35%;
+          height: 100%;
+          margin-right: 1rem;
+          background-image: url("../../assets/bouqet-home.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: 50% 50%;
+          border-radius: 10px;
+          box-shadow: 3px 6px 8px rgba(0, 0, 0, 0.1);
+    
+        }
+    
+        .brides-image {
+          width: 75%;
+          height: 100%;
+          margin-left: 1rem;
+          background-image: url("../../assets/drinking-brides-below.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: 50% 50%;
+          border-radius: 10px;
+          box-shadow: 3px 6px 8px rgba(0, 0, 0, 0.1);
+          display: flex;
+          align-items: end;
+          justify-content: center;
+          p{
+            color: black;
+            font-size: 1.25rem;
+            text-align: center;
+            padding: .5rem;
+            background-color: $medium-gold;
+            width: 100%;
+            border-radius: 0px 0px 10px 10px;
+            text-shadow: 0px 2px 2px rgba(0,0,0, 0.25);
+          }
+        }
+        @media screen and (max-width: 1100px){
+          .boquet-image{
+            display: none;
+          }
+          .brides-image{
+            width: 100%;
+            margin: 0;
+          }
+        }
+        
+      }
+    
+      @media screen and (max-width: 1100px){
+        .about-container-set1{
+          padding: 4rem;
+        }
+      }
+    
+      .about-container-set2 {
+        width: 100%;
+        height: 100vh;
+        padding: 4rem 8rem;
+        padding-bottom: 6rem;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: $dark-bg;
+        .maternity-set2 {
+          width: 50%;
+          height: 100%;
+          margin-right: 3rem;
+          margin-top: 0rem;
+          background-image: url("../../assets/maternity-about1.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: 50% 25%;
+          border-radius: 10px;
+          box-shadow: 3px 6px 8px rgba(0, 0, 0, 0.1);
+        }
+    
+        .red-bride-set2 {
+          width: 50%;
+          height: 100%;
+          margin-left: 1rem;
+          margin-top: 3rem;
+          background-image: url("../../assets/about-woman-set2.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: 50% 50%;
+          border-radius: 10px;
+          box-shadow: 3px 6px 8px rgba(0, 0, 0, 0.1);
+        }
+      }
+      .about-container-set3 {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        padding: 6rem;
+        justify-content: center;
+        background-color: $dark-bg;
+        .wedding-couple-set3 {
+          width: 50%;
+          height: 90%;
+          margin-left: 1.5rem;
+          margin-top: 2rem;
+          background-image: url("../../assets/wedding-couple-set3-about.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: 50% 25%;
+          border-radius: 10px;
+          box-shadow: 3px 6px 8px rgba(0, 0, 0, 0.1);
+         
+        }
+        @media screen and (max-width: 1100px){
+          .wedding-couple-set3{
+            width: 100%;
+            margin: 0;
+          }
+         }
+        .about-set3-container {
+          width: 50%;
+          height: 50%;
+          padding: 1rem 1rem;
+          .embrace-image {
+            width: 100%;
+            height: 100%;
+            background-image: url("../../assets/man-set3.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            border-radius: 10px;
+            box-shadow: 3px 6px 8px rgba(0, 0, 0, 0.1);
+           display: flex;
+            align-items: end;
+            justify-content: center;
+           p{
+            color: black;
+            font-size: 1.25rem;
+            text-align: center;
+            padding: .5rem;
+            background-color: $medium-gold;
+            width: 100%;
+            border-radius: 0px 0px 10px 10px;
+            text-shadow: 0px 2px 2px rgba(0,0,0, 0.25);
+          }
+          }
+    
+          .child-set3 {
+            width: 100%;
+            height: 100%;
+            margin-top: 2rem;
+            background-image: url("../../assets/about-child-set3.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            border-radius: 10px;
+            box-shadow: 3px 6px 8px rgba(0, 0, 0, 0.1);
+            
+            
+          }
+          
+         
+        }   
+      }
+    
+      @media screen and (max-width: 1100px){
+        .about-container-set3{
+          display: none;
+        }
+      }
+    
+     
+      .about-container-set4{
+        width: 100%;
+        height: 75vh;
+        padding: 4rem 6rem 2rem 6rem;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: $dark-bg;
+        gap: 4rem;
+        .wedding-set4 {
+          width: 35%;
+          height: 100%;
+          background-image: url("../../assets/destination-services.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: 50% 50%;
+          border-radius: 10px;
+          box-shadow: 3px 6px 8px rgba(0, 0, 0, 0.1);
+    
+        }
+    
+        .wedding-day-set4 {
+          width: 75%;
+          height: 100%;
+          margin-left: 1rem;
+          background-image: url("../../assets/wedding-set4.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: 50% 50%;
+          border-radius: 10px;
+          box-shadow: 3px 6px 8px rgba(0, 0, 0, 0.1);
+          display: flex;
+          align-items: start;
+          justify-content: center;
+          p{
+            color: black;
+            font-size: 1.25rem;
+            text-align: center;
+            padding: .5rem;
+            background-color: $medium-gold;
+            width: 100%;
+            border-radius: 10px 10px 0px 0px;
+            text-shadow: 0px 2px 2px rgba(0,0,0, 0.25);
+          }
+        }
+        @media screen and (max-width: 1100px){
+          .wedding-set4{
+            display: none;
+          }
+          .wedding-day-set4{
+            width: 100%;
+            margin: 0;
+          }
+        }
+        
+    }
+    
+    @media screen and (max-width: 1100px){
+      .about-container-set4{
+        padding: 4rem;
+        margin: 0;
+      }
+    }

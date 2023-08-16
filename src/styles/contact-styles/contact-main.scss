@@ -1,0 +1,185 @@
+/* ContactForm.css */
+@use "../custom" as *;
+.contact-form-container {
+    padding: 100px;
+    display: flex;
+    background-color: $darker-bg;
+  }
+
+  .space{
+    width: 50%;
+    div{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 40px;
+      background-color: $dark-bg;
+      height: 45vh;
+      align-items: start;
+      justify-content: start;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      h1{
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+      h2{
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+      }
+      p{
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+      }
+      h5{
+        font-size: .9rem;
+        opacity: .5;
+      }
+    }
+   
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid $light-bg;
+    border-radius: 5px;
+    background-color: $light-bg;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    label{
+      color: $white;
+    }
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .form-group-message{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .form-group-message textarea{
+    height: 200px;
+  }
+
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  textarea {
+    padding: 10px;
+    border: 1px solid $white;
+    background-color: $light-bg;
+    border-radius: 3px;
+    font-size: 16px;
+  }
+  
+  .form-group-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .cancel-button{
+    background-color: transparent;
+    border: 1px solid $white;
+    border-radius: 3px;
+    padding: 0.25rem 0.75rem;
+    color: $white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        color: $white;
+        background-color: $red;
+        border: 1px solid $white;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-in-out;
+    }
+  }
+
+  .submit-button{
+    background-color: transparent;
+    border: 1px solid $white;
+    border-radius: 3px;
+    padding: 0.25rem 0.75rem;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        color: $white;
+        background-color: $green;
+        border: 1px solid $white;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-in-out;
+    }
+    .submit-button.sending {
+      color: $dark-bg;
+      background-color: $white;
+      border: 1px solid $dark-bg;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+      cursor: not-allowed;
+    }
+  }
+  
+
+  .success-message {
+    text-align: center;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    gap: 20px;
+    h4{
+      font-size: 2rem;
+    }
+    .back-button{
+      width: 30%;
+      height: 2.5rem;
+      &:hover{
+        color: $white;
+        background-color: $green;
+        border: 1px solid $white;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-in-out;
+    }
+    }
+   }
+  
+
+  @media screen and (max-width:1250px) {
+    .contact-form-container{
+        background-position: 30% 50%;
+        background-size: 200%;
+    }
+    .space{
+        visibility: hidden;
+        width: 0;
+    }
+
+    .form{
+        width: 100%;
+    }
+  }
+
+  @media screen and (max-width:940px) {
+  }
+  

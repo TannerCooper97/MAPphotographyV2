@@ -1,0 +1,35 @@
+@use "../custom" as *;
+.masonry {
+    columns: 4;
+    column-gap: 16px;
+    padding: 4rem 8rem;
+    background-color: $light-bg;
+    @media (max-width: 1200px) {
+      columns: 3;
+    }
+    @media (max-width: 992px) {
+      columns: 2;
+      padding: 2rem;
+    }
+    @media (max-width: 768px) {
+        columns: 1;
+        padding: 1rem;
+      }
+    //@media (max-width: 768px) {columns: 1;}
+    .grid {
+      display: inline-block;
+      margin-bottom: 16px;
+      position: relative;
+     
+      img {
+        width: 100%;
+        border-radius: 5px;
+        box-shadow: 3px 6px 8px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+      }
+    }
+    
+  }
+  .mt-auto {
+    margin-top:auto;
+  }

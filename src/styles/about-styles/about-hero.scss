@@ -1,0 +1,30 @@
+@use "../custom" as *;
+.greetings-about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 100px; 
+    background-color: $light-bg;
+  }
+  
+  .greetings-about-container {
+    flex: 1;
+  }
+  
+  .text-column {
+    padding-right: 60px;
+  }
+  
+  .image-column {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .about-photo img {
+    max-width: 85%;
+    border-radius: 5px;
+    height: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  

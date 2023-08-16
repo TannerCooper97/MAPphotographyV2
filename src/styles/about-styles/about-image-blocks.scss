@@ -1,0 +1,35 @@
+@use "../custom" as *;
+.photo-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+    gap: 60px;
+    flex-wrap: wrap;
+  
+    .photo-card {
+      flex: 1;
+      padding: 20px;
+      background-color: $white;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      text-align: center;
+      border: 1px solid $dark-bg;
+  
+      img {
+        max-width: 100%;
+        border: 1px solid $light-bg;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+  
+      .excerpt {
+        font-size: 1rem;
+        color: $darker-bg;
+      }
+    }
+  }
+  
