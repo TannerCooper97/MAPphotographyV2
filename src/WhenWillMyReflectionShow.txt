@@ -1,0 +1,6 @@
+Who I am inside?
+if you got the reference, then I don't appologize. LoginModal
+
+I would say reflecting now I (once again) preceived tasks to be eaiser said then done. I got most of what I wanted to accomplish regarding the redesign of the sight and alot of the functionality set up for when I actually create a back end server to host. But my memory is shot and couldn't remember how to set up the middleware, and actually ended up hurting more in the end because I forgot to budget time for testing. I think overall the project went well, wish I spent less time figuring out how to get the authorization working and spent more on functionality of the website. However, I am very thrilled I got the photo modal working and tried to replicate facebook or instagram photo viewer. It looks so good for a prototype! Along with changing the website to feel more dynamic then the last iteration. Reagardless, I am glad I got to spend time doing more front end development this semester because it kinda made me fall in love with "Full Stack" development again. I can't wait to see this project ready for production in the near future. 
+
+-ps, thank you for being understanding and letting me turn in assingments. This last year has been really rough, and I appreciate you being so kind with my assignments. I hope to meet you soon, ill actually be on campus this fall! LOL!
