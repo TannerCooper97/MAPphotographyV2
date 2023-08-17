@@ -1,0 +1,15 @@
+@use "../custom" as *;
+  .product-list-nav {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+     a {
+      @include button-bg($white);
+      text-decoration: none;
+      
+    }
+  }
+  
+  
+  
+  

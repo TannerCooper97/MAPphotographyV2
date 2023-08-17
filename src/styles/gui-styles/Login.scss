@@ -1,0 +1,16 @@
+@use "../custom" as *;
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+    button{
+        @include button-bg($green);
+        &:hover{
+            color: $white;
+            border: 1px solid $white;
+        }
+    }
+}

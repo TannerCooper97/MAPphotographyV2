@@ -13,3 +13,21 @@ $green: #1F724E;
 $primary-color: $dark-bg;
 $secondary-color: $gold-white;
 $tertiary-color: $light-gold;
+
+@mixin button-bg($bg) {
+        background-color: transparent;
+        border: 1px solid $white;
+        border-radius: 3px;
+        padding: 0.25rem 0.75rem;
+        color: #fff;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            color: $dark-bg;
+            background-color: $bg;
+            border: 1px solid $dark-bg;
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+}

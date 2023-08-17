@@ -3,11 +3,12 @@ import RootLayout from "./pages/Root";
 import ErrorPage from "./pages/Error";
 import AboutPage from "./pages/About";
 import HomePage from "./pages/Home";
+import ProductDetailPage from "./pages/ProductDetails";
 import PortfolioPage from "./pages/Portfolio";
 import ServicesPage from "./pages/Services";
 import ContactPage from "./pages/Contact";
-import ProfilePage from "./pages/Profile";
-import LoginPage from "./pages/Login";
+import ServiceRootLayout from "./pages/ServiceRoot";
+import { AuthProvider } from "./components/GUI/AuthContext";
 
 const router = createBrowserRouter([
   {
@@ -15,19 +16,29 @@ const router = createBrowserRouter([
     element: <RootLayout />,
     errorElement: <ErrorPage />,
     children: [
-      { path: "/", element: <HomePage /> },
-      { path: "/about", element: <AboutPage /> },
-      { path: "/portfolio", element: <PortfolioPage /> },
-      { path: "/services", element: <ServicesPage /> },
-      { path: "/contact", element: <ContactPage /> },
-      { path: "./profile", element: <ProfilePage /> },
-      { path: "./login", element: <LoginPage /> },
+      { index: true, element: <HomePage /> },
+      {
+        path: "services",
+        element: <ServiceRootLayout />,
+        children: [
+          { path: "", element: <ServicesPage /> },
+          { path: ":productId", element: <ProductDetailPage /> },
+        ],
+      },
+      { path: "about", element: <AboutPage /> },
+      { path: "portfolio", element: <PortfolioPage /> },
+      { path: "contact", element: <ContactPage /> },
     ],
   },
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  
+  return(
+    <AuthProvider>
+  <RouterProvider router={router} />
+  </AuthProvider>
+  ) ;
 }
 
 export default App;

@@ -1,0 +1,13 @@
+@use "../custom" as *;
+.service-hero-container{
+    padding: 2.5rem;
+    text-align: center;
+    h1{
+        margin-bottom: .75rem;
+    }
+    h5{
+        font-size: 1rem;
+        margin-bottom: .25rem;
+        opacity: .5;
+    }
+}
